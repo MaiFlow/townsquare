@@ -55,7 +55,7 @@
           </template>
           <div class="button demon" @click="finish">Close</div>
         </div>
-        <div class="button-group mark">
+        <div class="button-group mark" v-if="nominee.role.team !== 'traveler'">
           <div
             class="button"
             :class="{
